@@ -154,14 +154,25 @@
       "pages": ["contribute-api"]
     },
     {
-      "group": "",
-      "pages": ["sync", "nango-sync/quickstart"]
+      "group": "Getting Started",
+      "pages": ["nango-sync/sync", "nango-sync/quickstart"]
     },
     {
       "group": "Use Nango Sync",
       "pages": [
         "#",
         "nango-sync/use-nango/core-concepts",
+        {
+          "group": "Create Syncs",
+          "pages": [
+            "nango-sync/use-nango/une-nango-sync/create-syncs",
+            "nango-sync/use-nango/une-nango-sync/modes",
+            "nango-sync/use-nango/une-nango-sync/sync-scheduling",
+            "nango-sync/use-nango/une-nango-sync/attach-metadata-to-syncs",
+            "nango-sync/use-nango/une-nango-sync/pagination",
+            "nango-sync/use-nango/une-nango-sync/request-authentication"
+          ]
+        },
         "nango-sync/use-nango/manage-syncs",
         "nango-sync/use-nango/sync-notifications",
         "nango-sync/use-nango/schema-mappings",
