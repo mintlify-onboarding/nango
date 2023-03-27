@@ -1,0 +1,43 @@
+{
+  "name": "Nango",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#",
+    "light": "#",
+    "dark": "#",
+    "anchors": { "from": "#", "to": "#" }
+  },
+  "topbarCtaButton": {
+    "name": "",
+    "url": ""
+  },
+  "topbarLinks": [
+    {
+      "name": "",
+      "url": ""
+    }
+  ],
+  "anchors": [
+    {
+      "name": "",
+      "icon": "",
+      "url": ""
+    }
+  ],
+  "navigation": [
+    {
+      "group": "",
+      "pages": [""]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/NangoHQ",
+    "linkedin": "https://www.linkedin.com/company/nangohq/",
+    "github": "https://github.com/NangoHQ/nango",
+    "slack": "https://nango-community.slack.com/join/shared_invite/zt-1cvpdflmb-TMrjJJ_AZJeMivOgt906HA#/shared-invite/email"
+  }
+}
