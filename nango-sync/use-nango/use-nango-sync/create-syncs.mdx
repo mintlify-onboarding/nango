@@ -1,12 +1,12 @@
 ---
 title: "Create Syncs"
 sidebarTitle: "All Options"
+description: "Adding a Sync to Nango is quick & easy."
 ---
 
-Adding a Sync to Nango is quick & easy. If you have not read the
-[core concepts](/nango-sync/use-nango/core-concepts) yet please do so first:
-From here on out we assume you are familiar with Syncs and how they work
-together with your application.
+If you have not read the [core concepts](/nango-sync/use-nango/core-concepts)
+yet please do so first: From here on out we assume you are familiar with Syncs
+and how they work together with your application.
 
 ## 3 quick steps to add a new Sync[](#3-quick-steps-to-add-a-new-sync "Direct link to 3 quick steps to add a new Sync")
 
@@ -30,10 +30,10 @@ If you want to see some examples of them in action take a look at the
 For all the `path` parameters you can use `.` characters to reference keys in
 nested objects: `paging.next.after`
 
-- Node SDK
-- REST API (curl)
+<Tabs>
+<Tab title="Node SDK" >
 
-```
+```js
 import {Nango, NangoHttpMethod} from '@nangohq/node-client'
 
 let config = {
@@ -111,10 +111,13 @@ let config = {
 
 // Add the Sync
 new Nango().sync('https://api.example.com/my/endpoint?query=A+query', config);
-
 ```
 
-```
+</Tab>
+
+<Tab title="REST API (curl)" >
+
+```js
 curl --request POST \
 --url http://localhost:3003/v1/syncs \
 --header "Content-type: application/json" \
@@ -203,10 +206,12 @@ curl --request POST \
 # - max_total: Limit the total number of total objects synced for testing purposes.
 # - friendly_name: Human readable name, will be used in logs & observability.
 #
-
 ```
 
-## Problems with your Sync? We are here to help![](#problems-with-your-sync-we-are-here-to-help "Direct link to Problems with your Sync? We are here to help!")
+</Tab>
+</Tabs>
+
+## Problems with your Sync? We are here to help!
 
 If you need help or run into issues, please reach out! We are online and
 responsive all day on the [Slack Community](https://nango.dev/slack).
