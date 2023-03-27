@@ -1,29 +1,37 @@
 ---
 title: "Create Syncs"
+sidebarTitle: "All Options"
 ---
 
-Adding a Sync to Nango is quick & easy. If you have not read the [core concepts](/nango-sync/use-nango/core-concepts) yet please do so first: From here on out we assume you are familiar with Syncs and how they work together with your application.
+Adding a Sync to Nango is quick & easy. If you have not read the
+[core concepts](/nango-sync/use-nango/core-concepts) yet please do so first:
+From here on out we assume you are familiar with Syncs and how they work
+together with your application.
 
 ## 3 quick steps to add a new Sync[](#3-quick-steps-to-add-a-new-sync "Direct link to 3 quick steps to add a new Sync")
 
 We recommend the following steps when you add a new Sync to Nango:
 
-1. Make sure the API request works as expected (using Postman, a script, CLI etc.)
+1. Make sure the API request works as expected (using Postman, a script, CLI
+   etc.)
 2. Look at the Sync options below and configure them for your Sync
 3. Run your code once and make sure Nango syncs your data as expected
 
 ## Sync options[](#sync-options "Direct link to Sync options")
 
-This example shows you all the possible configuration options for a Nango Sync. 
+This example shows you all the possible configuration options for a Nango Sync.
 
-**All configuration fields are optional** (though you may need to provide the relevant ones for the external API request to succeed). 
+**All configuration fields are optional** (though you may need to provide the
+relevant ones for the external API request to succeed).
 
-If you want to see some examples of them in action take a look at the [real world examples](/nango-sync/real-world-examples) page.
+If you want to see some examples of them in action take a look at the
+[real world examples](/nango-sync/real-world-examples) page.
 
-For all the `path` parameters you can use `.` characters to reference keys in nested objects: `paging.next.after`
+For all the `path` parameters you can use `.` characters to reference keys in
+nested objects: `paging.next.after`
 
-* Node SDK
-* REST API (curl)
+- Node SDK
+- REST API (curl)
 
 ```
 import {Nango, NangoHttpMethod} from '@nangohq/node-client'
@@ -93,7 +101,7 @@ let config = {
     //==================
     nango_connection_id: "user1",  // The ID of the connection registered with Nango
     nango_provider_config_key: "hubspot",  // The key of the provider configuration registered with Nango
-    
+
     //==================
     // Convenience features
     //==================
@@ -157,7 +165,7 @@ curl --request POST \
 # Pagination strategy 1: Next page cursor in response metadata
 # - paging_cursor_request_path: Provide the cursor request path for fetching the next page.
 # - paging_cursor_metadata_response_path: Use a field in the response as cursor for the next page.
-# 
+#
 # Pagination strategy 2: Next page cursor in response's last object
 # - paging_cursor_request_path: Provide the cursor request path for fetching the next page.
 # - paging_cursor_object_response_path: Use a field of the response's last object as cursor for the next page.
@@ -200,4 +208,5 @@ curl --request POST \
 
 ## Problems with your Sync? We are here to help![](#problems-with-your-sync-we-are-here-to-help "Direct link to Problems with your Sync? We are here to help!")
 
-If you need help or run into issues, please reach out! We are online and responsive all day on the [Slack Community](https://nango.dev/slack).
+If you need help or run into issues, please reach out! We are online and
+responsive all day on the [Slack Community](https://nango.dev/slack).

@@ -160,17 +160,16 @@
     {
       "group": "Use Nango Sync",
       "pages": [
-        "#",
         "nango-sync/use-nango/core-concepts",
         {
           "group": "Create Syncs",
           "pages": [
-            "nango-sync/use-nango/une-nango-sync/create-syncs",
-            "nango-sync/use-nango/une-nango-sync/modes",
-            "nango-sync/use-nango/une-nango-sync/sync-scheduling",
-            "nango-sync/use-nango/une-nango-sync/attach-metadata-to-syncs",
-            "nango-sync/use-nango/une-nango-sync/pagination",
-            "nango-sync/use-nango/une-nango-sync/request-authentication"
+            "nango-sync/use-nango/use-nango-sync/create-syncs",
+            "nango-sync/use-nango/use-nango-sync/modes",
+            "nango-sync/use-nango/use-nango-sync/sync-scheduling",
+            "nango-sync/use-nango/use-nango-sync/attach-metadata-to-syncs",
+            "nango-sync/use-nango/use-nango-sync/pagination",
+            "nango-sync/use-nango/use-nango-sync/request-authentication"
           ]
         },
         "nango-sync/use-nango/manage-syncs",
