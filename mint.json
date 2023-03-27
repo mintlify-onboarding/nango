@@ -180,13 +180,16 @@
       ]
     },
     {
-      "group": "",
-      "pages": [
-        "nango-sync/real-world-examples",
-        "nango-sync/architecture",
-        "nango-sync/license-faq",
-        "nango-sync/contributing"
-      ]
+      "group": "Examples",
+      "pages": ["nango-sync/real-world-examples"]
+    },
+    {
+      "group": "Architecture",
+      "pages": ["nango-sync/architecture"]
+    },
+    {
+      "group": "Other Docs",
+      "pages": ["nango-sync/license-faq", "nango-sync/contributing"]
     }
   ],
   "footerSocials": {

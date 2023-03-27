@@ -1,9 +1,9 @@
 ---
 title: "Schema mappings"
+description:
+  "Nango offers a few different ways to transform and access the synced data in
+  your database:"
 ---
-
-Nango offers a few different ways to transform and access the synced data in
-your database:
 
 - Automatic JSON to SQL schema mapping
 - Access to the raw JSON object
@@ -11,14 +11,16 @@ your database:
 
 ## Automatic JSON-to-SQL schema mapping[](#automatic-json-to-sql-schema-mapping "Direct link to Automatic JSON-to-SQL schema mapping")
 
-info
-
+<Note>
 Automatically inferring a schema from API responses is tricky. If you run into
 issues or want to understand why your schema came out the way it did we are
 happy to help you in the [Slack community](https://nango.dev/slack)!
 
-In the near future we will also support [custom mappings](#custommapping) which
-will give you full control over the destination schema of Nango's mapping.
+In the near future we will also support
+[custom mappings](#custom-mapping-coming-soon) which will give you full control
+over the destination schema of Nango's mapping.
+
+</Note>
 
 ### How Nango determines the data schema[](#how-nango-determines-the-data-schema "Direct link to How Nango determines the data schema")
 
@@ -36,14 +38,13 @@ Here is an example:
 
 The following JSON response:
 
-```
+```json
 {
   "field": true,
-  "parent": {"nested": "string_value"},
+  "parent": { "nested": "string_value" },
   "nullField": null,
   "list": [1, 2]
 }
-
 ```
 
 turns into this SQL table:
@@ -59,7 +60,7 @@ in the SQL table that align with the data type of the schema. As an example,
 let's assume the field `num_users` has type number and these objects get
 returned by the API:
 
-```
+```json
 [
   {
     "name": "obj1",
@@ -74,7 +75,6 @@ returned by the API:
     "num_users": "nango is great"
   }
 ]
-
 ```
 
 In this case Nango would store the value of `num_users` for obj1 and obj2, but
