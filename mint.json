@@ -28,14 +28,14 @@
       "url": "nango-sync"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://www.nango.dev/blog"
-    },
-    {
       "name": "Community",
       "icon": "slack",
       "url": "https://nango-community.slack.com/join/shared_invite/zt-1cvpdflmb-TMrjJJ_AZJeMivOgt906HA#/shared-invite/email"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://www.nango.dev/blog"
     }
   ],
   "navigation": [
